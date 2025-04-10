@@ -1,0 +1,15 @@
+[package]
+name = "curve"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+anchor-lang = { version = "0.31.0"}
+anchor-spl = { version = "0.31.0"}
+spl-math = { version = "0.3", features = ["no-entrypoint"] }
+uint = "0.9.1"
+
+[dev-dependencies]
+quickcheck = "0.9"
+proptest = "1.0"
+rand = "0.8.5"
