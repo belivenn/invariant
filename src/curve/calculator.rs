@@ -29,17 +29,6 @@ pub enum RoundDirection {
     Ceiling,
 }
 
-impl TradeDirection {
-    /// Given a trade direction, gives the opposite direction of the trade, so
-    /// A to B becomes B to A, and vice versa
-    pub fn opposite(&self) -> TradeDirection {
-        match self {
-            TradeDirection::ZeroForOne => TradeDirection::OneForZero,
-            TradeDirection::OneForZero => TradeDirection::ZeroForOne,
-        }
-    }
-}
-
 /// Encodes results of depositing both sides at once
 #[derive(Debug, PartialEq)]
 pub struct TradingTokenResult {
